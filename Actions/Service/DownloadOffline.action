@@ -1,0 +1,13 @@
+{
+    "Service": "/gapscan2/Services/com_sap_edm_sampleservice_v2.service",
+    "DefiningRequests": [{
+        "Name": "Customers",
+        "Query": "Customers"
+    }],
+    "_Type": "Action.Type.OfflineOData.Download",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnFailure": "/gapscan2/Actions/Service/SyncFailureMessage.action",
+    "OnSuccess": "/gapscan2/Rules/ErrorArchive/ErrorArchive_CheckForSyncError.js"
+}

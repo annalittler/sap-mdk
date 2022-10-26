@@ -1,0 +1,51 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ButtonTable",
+					"_Name": "SectionButtonTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Buttons": [
+					],
+					"Layout": {
+						"LayoutType": "Vertical",
+						"HorizontalAlignment": "Leading"
+					}
+				},
+				{
+					"_Type": "Section.Type.ProfileHeader",
+					"_Name": "SectionProfileHeader0",
+					"Visible": true,
+					"ProfileHeader": {
+						"DetailImage": "res://contact.png",
+						"DetailImageIsCircular": true,
+						"Headline": "Headline",
+						"Subheadline": "Subheadline",
+						"Description": "hello"
+					}
+				},
+				{
+					"_Type": "Section.Type.Image",
+					"_Name": "SectionImage0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Image": "res://mdk_logo.png",
+					"Alignment": "center",
+					"ContentMode": "ScaleAspectFit"
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Table",
+	"Caption": "Table",
+	"PrefersLargeCaption": true
+}

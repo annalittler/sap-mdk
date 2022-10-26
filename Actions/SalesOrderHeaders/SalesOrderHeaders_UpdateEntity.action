@@ -1,0 +1,25 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "SalesOrderHeaders",
+        "Service": "/gapscan2/Services/com_sap_edm_sampleservice_v2.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "CreatedAt": "#Control:CreatedAt/#Value",
+        "CurrencyCode": "#Control:CurrencyCode/#Value",
+        "CustomerId": "#Control:CustomerId/#SelectedValue",
+        "GrossAmount": "#Control:GrossAmount/#Value",
+        "LifeCycleStatus": "#Control:LifeCycleStatus/#Value",
+        "LifeCycleStatusName": "#Control:LifeCycleStatusName/#Value",
+        "NetAmount": "#Control:NetAmount/#Value",
+        "SalesOrderId": "#Control:SalesOrderId/#Value",
+        "TaxAmount": "#Control:TaxAmount/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/gapscan2/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/gapscan2/Actions/UpdateEntityFailureMessage.action"
+}

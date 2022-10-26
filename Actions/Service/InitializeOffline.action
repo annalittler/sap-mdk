@@ -1,0 +1,15 @@
+{
+    "Service": "/gapscan2/Services/com_sap_edm_sampleservice_v2.service",
+    "DefiningRequests": [{
+        "Name": "Customers",
+        "Query": "Customers"
+    }],
+    "_Type": "Action.Type.ODataService.Initialize",
+    "ShowActivityIndicator": true,
+    "ActivityIndicatorText": "Downloading...",
+    "ActionResult": {
+        "_Name": "init"
+    },
+    "OnSuccess": "/gapscan2/Actions/Service/InitializeOfflineSuccessMessage.action",
+    "OnFailure": "/gapscan2/Actions/Service/InitializeOfflineFailureMessage.action"
+}

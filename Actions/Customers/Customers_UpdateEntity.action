@@ -1,0 +1,28 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "Customers",
+        "Service": "/gapscan2/Services/com_sap_edm_sampleservice_v2.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "City": "#Control:City/#Value",
+        "Country": "#Control:Country/#Value",
+        "CustomerId": "#Control:CustomerId/#Value",
+        "DateOfBirth": "#Control:DateOfBirth/#Value",
+        "EmailAddress": "#Control:EmailAddress/#Value",
+        "FirstName": "#Control:FirstName/#Value",
+        "HouseNumber": "#Control:HouseNumber/#Value",
+        "LastName": "#Control:LastName/#Value",
+        "PhoneNumber": "#Control:PhoneNumber/#Value",
+        "PostalCode": "#Control:PostalCode/#Value",
+        "Street": "#Control:Street/#Value",
+        "UpdatedTimestamp": "#Control:UpdatedTimestamp/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/gapscan2/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/gapscan2/Actions/UpdateEntityFailureMessage.action"
+}

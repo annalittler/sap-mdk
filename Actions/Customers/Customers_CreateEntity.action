@@ -1,0 +1,27 @@
+{
+    "CreateLinks": [],
+    "OnFailure": "/gapscan2/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/gapscan2/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "City": "#Control:City/#Value",
+        "Country": "#Control:Country/#Value",
+        "CustomerId": "#Control:CustomerId/#Value",
+        "DateOfBirth": "#Control:DateOfBirth/#Value",
+        "EmailAddress": "#Control:EmailAddress/#Value",
+        "FirstName": "#Control:FirstName/#Value",
+        "HouseNumber": "#Control:HouseNumber/#Value",
+        "LastName": "#Control:LastName/#Value",
+        "PhoneNumber": "#Control:PhoneNumber/#Value",
+        "PostalCode": "#Control:PostalCode/#Value",
+        "Street": "#Control:Street/#Value",
+        "UpdatedTimestamp": "#Control:UpdatedTimestamp/#Value"
+    },
+    "Target": {
+        "EntitySet": "Customers",
+        "Service": "/gapscan2/Services/com_sap_edm_sampleservice_v2.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateEntity"
+}

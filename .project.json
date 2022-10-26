@@ -1,0 +1,48 @@
+{
+	"Credential": "cf",
+	"CF": {
+		"Target": "https://api.cf.ap21.hana.ondemand.com",
+		"Organization": "9a4af2f0-02f4-483f-b793-3b5d0a54900f",
+		"Space": "996277c8-cf88-4770-b0d2-b38509976434",
+		"Deploy": {
+			"Description": "",
+			"WebClient": {
+				"Runtime": "",
+				"URL": ""
+			},
+			"Destination": [
+				{
+					"CF": "",
+					"MDK": "com.sap.edm.sampleservice.v2",
+					"URL": ""
+				}
+			]
+		}
+	},
+	"MobileService": {
+		"Type": "standard",
+		"AdminAPI": "https://mobile-service-cockpit-api.cfapps.ap21.hana.ondemand.com/cockpit/v1/org/9a4af2f0-02f4-483f-b793-3b5d0a54900f/space/996277c8-cf88-4770-b0d2-b38509976434",
+		"AppId": "gapbuster",
+		"Destination": [
+			"com.sap.edm.sampleservice.v2",
+			"gapbuster"
+		]
+	},
+	"Onboarding": {
+		"Schema": "sapmobilesvcs",
+		"TimeZone": "UTC",
+		"URL": "sapmobilesvcs://?AppId=gapbuster&ClientId=753f48c5-5cd2-4f54-9cb4-898e4d55715c&ServerUrl=https://c58b3b53trial-dev-gapbuster.cfapps.ap21.hana.ondemand.com&SapCloudPlatformEndpoint=https://c58b3b53trial-dev-gapbuster.cfapps.ap21.hana.ondemand.com&AuthorizationEndpointUrl=https://c58b3b53trial-dev-gapbuster.cfapps.ap21.hana.ondemand.com/oauth2/api/v1/authorize&RedirectUrl=https://c58b3b53trial-dev-gapbuster.cfapps.ap21.hana.ondemand.com&TokenUrl=https://c58b3b53trial-dev-gapbuster.cfapps.ap21.hana.ondemand.com/oauth2/api/v1/token&multiUser=false"
+	},
+	"LCAP": {
+		"FullName": "",
+		"Service": [],
+		"sourceTemplate": {
+			"id": "html5moduletemplates.basicSAPUI5ApplicationProjectModule",
+			"version": "1.40.12"
+		}
+	},
+	"Build": {
+		"SourceMap": true,
+		"WMF": false
+	}
+}

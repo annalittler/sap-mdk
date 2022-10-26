@@ -1,0 +1,13 @@
+{
+    "Target": {
+        "EntitySet": "Customers",
+        "Service": "/gapscan2/Services/com_sap_edm_sampleservice_v2.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "OnSuccess": "/gapscan2/Actions/DeleteEntitySuccessMessage.action",
+    "OnFailure": "/gapscan2/Actions/DeleteEntityFailureMessage.action",
+    "ActionResult": {
+        "_Name": "delete"
+    },
+    "_Type": "Action.Type.ODataService.DeleteEntity"
+}
